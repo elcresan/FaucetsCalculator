@@ -4,17 +4,17 @@ namespace FaucetsCalculator {
     using FaucetsCalculator.Miners;
     
     internal class Farm {
-        private List<IMiner> miners;
+        private List<Miner> miners;
 
         private int period;
 
         public Farm()
         {            
-            this.miners = new List<IMiner>();
+            this.miners = new List<Miner>();
             this.period = 0;
         }
 
-        public void AddMiner (IMiner miner){
+        public void AddMiner (Miner miner){
             this.miners.Add(miner);
         }
 
